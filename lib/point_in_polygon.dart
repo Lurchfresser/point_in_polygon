@@ -48,6 +48,17 @@ class Poly {
       return false;
     }
 
+
+    if (aX == bX) {
+      return true;
+    }
+
+    if (pX < aX && pX < bX) {
+      // The case where the point is to the left(west) of both points A and B,
+      // So we dont need to check, because the ray will certanly intersect with the polygon edge.
+      return true;
+    }
+
     // y = mx + b : Standard linear equation
     // (y-b)/m = x : Formula to solve for x
 
