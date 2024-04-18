@@ -1,5 +1,5 @@
-import 'package:flutter_test/flutter_test.dart';
 import 'package:point_in_polygon/point_in_polygon.dart';
+import 'package:test/test.dart';
 
 void main() {
   final List<Point> points = <Point>[
